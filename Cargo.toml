@@ -1,0 +1,16 @@
+[package]
+name = "tt-identifier"
+version = "0.1.0"
+authors = ["Michael Burge <michaelburge@pobox.com>"]
+edition = "2018"
+license = "MIT"
+description = "Macro for deterministically turning arbitrary Rust tokens into an identifier"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "0.15"
+proc-macro2 = "0.4"

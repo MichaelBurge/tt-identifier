@@ -4,7 +4,6 @@ use std::hash::{Hash, Hasher};
 
 use proc_macro::TokenStream;
 use proc_macro2::Span;
-use std::iter::FromIterator;
 use syn::parse_quote;
 
 #[proc_macro]

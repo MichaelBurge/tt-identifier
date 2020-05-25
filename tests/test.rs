@@ -10,8 +10,6 @@ fn it_works() {
         4
     );
     // Test that the string equivalent doesn't throw an error.
-    assert_eq!(
-        identify_string!(Foo<Bar<(u64, u64)>>),
-        identify_string!(Foo<Bar<(u64, u64)>>)
-    );
+    let s: &str = identify_string!(Foo<Bar<(u64, u64)>>);
+    assert_eq!(s, identify_string!(Foo<Bar<(u64, u64)>>));
 }
